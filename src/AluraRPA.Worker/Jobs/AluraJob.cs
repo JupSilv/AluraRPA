@@ -25,10 +25,19 @@ public class AluraJob : JobBase
         _exemploRepository = exemploRepository;
     }
 
-    public override Task Execute(IJobExecutionContext context)
+    public override async Task Execute(IJobExecutionContext context)
     {
-        _logger.LogInformation("Capturando fila para atuação");
+        _logger.LogInformation("Inicializando aplicação...");
+
         SetupDriver(_configuration["AppSettings:ChromeDownloadsPath"]);
+
+        string url = _configuration["Alura:URLs:Principal"];
+        string searchWord = _configuration["Alura:Words:SearchWord"];
+        var navigationResult = await _navigator.NavigationAlura(url, searchWord);
+
+        _driverFactory.Quit();
+
+        _logger.LogInformation("Encerrando aplicação...");
         throw new NotImplementedException();
     }
     private void SetupDriver(string? downloadPath = null)

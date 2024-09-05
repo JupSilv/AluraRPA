@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AluraRPA.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faa764d0d00214c17337d089f225fa45df02641b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+654bbe3a361578a906cb117200065c7f9fc381b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AluraRPA.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AluraRPA.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

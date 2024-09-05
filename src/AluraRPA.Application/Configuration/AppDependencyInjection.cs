@@ -1,3 +1,6 @@
+using AluraRPA.Application.Selenium.Controllers;
+using AluraRPA.Application.Selenium.Pages;
+
 namespace AluraRPA.Application.Configuration;
 public static class AppDependencyInjection
 {
@@ -7,6 +10,11 @@ public static class AppDependencyInjection
         services.AddTransient<IAluraRepository, AluraRepository>();
 
         services.AddSingleton<IProcessManagerService, ProcessManagerService>();
+
+        services.AddSingleton<AluraController>();
+
+        services.AddSingleton<HomePage>();
+
         services.AddSingleton<INavigator, Navigator>();
 
 
