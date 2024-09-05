@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\DEV\\AluraRPA\\AluraRPA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.worker\\jobs\\alurajob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|solutionrelative:src\\alurarpa.worker\\jobs\\alurajob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C122BDD-BFEC-422C-B0B2-53010FA6E180}|src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.infrastructure\\alurarpa.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2C122BDD-BFEC-422C-B0B2-53010FA6E180}|src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj|solutionrelative:src\\alurarpa.infrastructure\\alurarpa.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.worker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|solutionrelative:src\\alurarpa.worker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|solutionrelative:src\\alurarpa.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.worker\\jobs\\alurajob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|solutionrelative:src\\alurarpa.worker\\jobs\\alurajob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.worker\\jobs\\exemplojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|solutionrelative:src\\alurarpa.worker\\jobs\\exemplojob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C122BDD-BFEC-422C-B0B2-53010FA6E180}|src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.infrastructure\\data\\repositories\\alurarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C122BDD-BFEC-422C-B0B2-53010FA6E180}|src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj|solutionrelative:src\\alurarpa.infrastructure\\data\\repositories\\alurarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED64AE22-0307-4A0A-BB04-B61E550CB9A0}|src\\AluraRPA.Application\\AluraRPA.Application.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.application\\configuration\\appdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED64AE22-0307-4A0A-BB04-B61E550CB9A0}|src\\AluraRPA.Application\\AluraRPA.Application.csproj|solutionrelative:src\\alurarpa.application\\configuration\\appdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED64AE22-0307-4A0A-BB04-B61E550CB9A0}|src\\AluraRPA.Application\\AluraRPA.Application.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.application\\selenium\\navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED64AE22-0307-4A0A-BB04-B61E550CB9A0}|src\\AluraRPA.Application\\AluraRPA.Application.csproj|solutionrelative:src\\alurarpa.application\\selenium\\navigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A82FF7-3189-4CA0-922E-9D93C943E092}|src\\AluraRPA.Domain\\AluraRPA.Domain.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.domain\\interfaces\\ialurarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A82FF7-3189-4CA0-922E-9D93C943E092}|src\\AluraRPA.Domain\\AluraRPA.Domain.csproj|solutionrelative:src\\alurarpa.domain\\interfaces\\ialurarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C122BDD-BFEC-422C-B0B2-53010FA6E180}|src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.infrastructure\\services\\processmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C122BDD-BFEC-422C-B0B2-53010FA6E180}|src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj|solutionrelative:src\\alurarpa.infrastructure\\services\\processmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A82FF7-3189-4CA0-922E-9D93C943E092}|src\\AluraRPA.Domain\\AluraRPA.Domain.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.domain\\entities\\credential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A82FF7-3189-4CA0-922E-9D93C943E092}|src\\AluraRPA.Domain\\AluraRPA.Domain.csproj|solutionrelative:src\\alurarpa.domain\\entities\\credential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +59,144 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AluraJob.cs",
-              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
-              "RelativeDocumentMoniker": "src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
-              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
-              "RelativeToolTip": "src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T22:05:39.511Z",
+              "Title": "AluraRPA.Infrastructure",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj*",
+              "RelativeToolTip": "src\\AluraRPA.Infrastructure\\AluraRPA.Infrastructure.csproj*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-05T22:39:38.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Worker\\appsettings.json",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\appsettings.json",
+              "RelativeToolTip": "src\\AluraRPA.Worker\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-05T22:38:46.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Program.cs",
               "RelativeDocumentMoniker": "src\\AluraRPA.Worker\\Program.cs",
               "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Program.cs",
               "RelativeToolTip": "src\\AluraRPA.Worker\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:31:52.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AluraJob.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "RelativeToolTip": "src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAwwB8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:29:56.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAluraRepository.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Domain\\Interfaces\\IAluraRepository.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Domain\\Interfaces\\IAluraRepository.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Domain\\Interfaces\\IAluraRepository.cs",
+              "RelativeToolTip": "src\\AluraRPA.Domain\\Interfaces\\IAluraRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T22:05:36.315Z",
+              "WhenOpened": "2024-09-05T22:28:33.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AluraRepository.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Infrastructure\\Data\\Repositories\\AluraRepository.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Infrastructure\\Data\\Repositories\\AluraRepository.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Infrastructure\\Data\\Repositories\\AluraRepository.cs",
+              "RelativeToolTip": "src\\AluraRPA.Infrastructure\\Data\\Repositories\\AluraRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:27:05.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExemploJob.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\ExemploJob.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Worker\\Jobs\\ExemploJob.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\ExemploJob.cs",
+              "RelativeToolTip": "src\\AluraRPA.Worker\\Jobs\\ExemploJob.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAADwv2MAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:26:50.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDependencyInjection.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Application\\Configuration\\AppDependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Application\\Configuration\\AppDependencyInjection.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Application\\Configuration\\AppDependencyInjection.cs",
+              "RelativeToolTip": "src\\AluraRPA.Application\\Configuration\\AppDependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:25:32.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Navigator.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Application\\Selenium\\Navigator.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Application\\Selenium\\Navigator.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Application\\Selenium\\Navigator.cs",
+              "RelativeToolTip": "src\\AluraRPA.Application\\Selenium\\Navigator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T21:42:49.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProcessManagerService.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Infrastructure\\Services\\ProcessManagerService.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Infrastructure\\Services\\ProcessManagerService.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Infrastructure\\Services\\ProcessManagerService.cs",
+              "RelativeToolTip": "src\\AluraRPA.Infrastructure\\Services\\ProcessManagerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:26:20.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Credential.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Domain\\Entities\\Credential.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Domain\\Entities\\Credential.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Domain\\Entities\\Credential.cs",
+              "RelativeToolTip": "src\\AluraRPA.Domain\\Entities\\Credential.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T21:42:57.481Z",
               "EditorCaption": ""
             }
           ]

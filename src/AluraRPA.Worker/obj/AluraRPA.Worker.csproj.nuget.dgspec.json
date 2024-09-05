@@ -243,6 +243,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "GraphQL.Client": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "GraphQL.Client.Serializer.SystemTextJson": {
               "target": "Package",
               "version": "[4.0.2, )"

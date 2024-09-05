@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vBwzjrEJUxc=",
+  "dgSpecHash": "R0gFbvk0gnM=",
   "success": true,
   "projectFilePath": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Application\\AluraRPA.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Julio\\.nuget\\packages\\graphql.client\\4.0.2\\graphql.client.4.0.2.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\graphql.client.abstractions\\4.0.2\\graphql.client.abstractions.4.0.2.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\graphql.client.abstractions.websocket\\4.0.2\\graphql.client.abstractions.websocket.4.0.2.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\graphql.client.serializer.systemtextjson\\4.0.2\\graphql.client.serializer.systemtextjson.4.0.2.nupkg.sha512",

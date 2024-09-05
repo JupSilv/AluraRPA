@@ -1,0 +1,14 @@
+global using OpenQA.Selenium;
+global using OpenQA.Selenium.Support.UI;
+global using static System.TimeSpan;
+global using Microsoft.Extensions.DependencyInjection;
+global using AluraRPA.Domain.Entities;
+global using AluraRPA.Domain.Interfaces;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.Logging;
+global using AluraRPA.Infrastructure.Data.Repositories;
+global using AluraRPA.Application.Selenium;
+global using AluraRPA.Infrastructure.Services;
+global using GraphQL.Client.Abstractions;
+global using GraphQL.Client.Http;
+global using GraphQL.Client.Serializer.SystemTextJson;

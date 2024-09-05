@@ -2,6 +2,23 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "GraphQL.Client/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL.Client.Abstractions": "4.0.2",
+          "GraphQL.Client.Abstractions.Websocket": "4.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GraphQL.Client.Abstractions/4.0.2": {
         "type": "package",
         "dependencies": {
@@ -519,6 +536,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AluraRPA.Domain": "1.0.0",
+          "GraphQL.Client": "4.0.2",
           "GraphQL.Client.Serializer.SystemTextJson": "4.0.2",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
@@ -537,6 +555,23 @@
     }
   },
   "libraries": {
+    "GraphQL.Client/4.0.2": {
+      "sha512": "EB/icQ7QWzCQzfT6yv8L6BAW+c7DrQuwIg/nNSguOQBMs2W7aaYMpEYidEZ4U2ao0CrT6gcCY0F8xz9hoB3Pvw==",
+      "type": "package",
+      "path": "graphql.client/4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "graphql.client.4.0.2.nupkg.sha512",
+        "graphql.client.nuspec",
+        "icon.png",
+        "lib/net461/GraphQL.Client.dll",
+        "lib/net461/GraphQL.Client.xml",
+        "lib/netstandard2.0/GraphQL.Client.dll",
+        "lib/netstandard2.0/GraphQL.Client.xml"
+      ]
+    },
     "GraphQL.Client.Abstractions/4.0.2": {
       "sha512": "zmtHtejUacIQHAdLEsetDX27mccX0R6MfEu32Ek4l6pprJe3zdtqx+UuWz3wSmrIaj05NLEe5FCHNTjhm3MnjA==",
       "type": "package",

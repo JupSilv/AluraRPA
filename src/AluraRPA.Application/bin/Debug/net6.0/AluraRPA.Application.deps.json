@@ -21,6 +21,18 @@
           "AluraRPA.Application.dll": {}
         }
       },
+      "GraphQL.Client/4.0.2": {
+        "dependencies": {
+          "GraphQL.Client.Abstractions": "4.0.2",
+          "GraphQL.Client.Abstractions.Websocket": "4.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Client.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.0.2.0"
+          }
+        }
+      },
       "GraphQL.Client.Abstractions/4.0.2": {
         "dependencies": {
           "GraphQL.Primitives": "4.0.2",
@@ -332,6 +344,7 @@
       "AluraRPA.Infrastructure/1.0.0": {
         "dependencies": {
           "AluraRPA.Domain": "1.0.0",
+          "GraphQL.Client": "4.0.2",
           "GraphQL.Client.Serializer.SystemTextJson": "4.0.2",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
@@ -359,6 +372,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "GraphQL.Client/4.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EB/icQ7QWzCQzfT6yv8L6BAW+c7DrQuwIg/nNSguOQBMs2W7aaYMpEYidEZ4U2ao0CrT6gcCY0F8xz9hoB3Pvw==",
+      "path": "graphql.client/4.0.2",
+      "hashPath": "graphql.client.4.0.2.nupkg.sha512"
     },
     "GraphQL.Client.Abstractions/4.0.2": {
       "type": "package",
