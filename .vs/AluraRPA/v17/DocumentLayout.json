@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DEV\\AluraRPA\\AluraRPA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.worker\\jobs\\alurajob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|solutionrelative:src\\alurarpa.worker\\jobs\\alurajob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|c:\\dev\\alurarpa\\alurarpa\\src\\alurarpa.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90E6589-23B5-449E-B90F-B1A876524CCB}|src\\AluraRPA.Worker\\AluraRPA.Worker.csproj|solutionrelative:src\\alurarpa.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AluraJob.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "RelativeToolTip": "src\\AluraRPA.Worker\\Jobs\\AluraJob.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:05:39.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Program.cs",
+              "RelativeDocumentMoniker": "src\\AluraRPA.Worker\\Program.cs",
+              "ToolTip": "C:\\DEV\\AluraRPA\\AluraRPA\\src\\AluraRPA.Worker\\Program.cs",
+              "RelativeToolTip": "src\\AluraRPA.Worker\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:05:36.315Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 54,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
