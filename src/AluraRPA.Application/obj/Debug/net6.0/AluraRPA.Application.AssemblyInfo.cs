@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AluraRPA.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+654bbe3a361578a906cb117200065c7f9fc381b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45eac0efe3dc917d86c39de5b94fb99aeab259c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AluraRPA.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AluraRPA.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

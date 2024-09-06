@@ -12,9 +12,11 @@ namespace AluraRPA.Application.Selenium.Controllers
 
         private HomePage _homePage { get; set; }
         private DetailsPage _detailsPage { get; set; }
-        public AluraController(HomePage homePage)
+        public AluraController(HomePage homePage
+            , DetailsPage detailsPage)
         {
             _homePage = homePage;
+            _detailsPage = detailsPage;
         }
 
         public string Home(string url)

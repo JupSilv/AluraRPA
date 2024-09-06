@@ -22,10 +22,6 @@ public class Navigator : INavigator
         _aluraController = aluraController;
     }
 
-    public async Task<NavigationResult> StartNavigationAsync(Credential credential)
-    {
-        throw new NotImplementedException();
-    }
     public async Task<ResultProcess> NavigationAlura(string url, string searchWord)
     {
         _logger.LogInformation("Acessando URL");
@@ -40,6 +36,11 @@ public class Navigator : INavigator
         if (_aluraController.Details() is null)
             return new(false, "Erro", "Falha ao exibir detalhes");
 
+        _logger.LogInformation("Executa a extração dos dados");
+        if (_aluraController.Extraction() is null)
+        {
+
+        }
         _logger.LogInformation("Executa a extração dos dados");
 
 
