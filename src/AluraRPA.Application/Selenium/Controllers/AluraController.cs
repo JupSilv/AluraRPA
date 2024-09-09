@@ -50,14 +50,5 @@ namespace AluraRPA.Application.Selenium.Controllers
             return result.obs.ToString();
         }
 
-        public string Extraction()
-        {
-            var result = _detailsPage.ExtractDetails();
-            if (!result.sucess)
-            {
-                return null;
-            }
-            return result.obs.ToString();
-        }
     }
 }

@@ -13,6 +13,5 @@ global using AluraRPA.Domain.Entities;
 global using OpenQA.Selenium;
 global using OpenQA.Selenium.Chrome;
 global using LogLevel = Microsoft.Extensions.Logging.LogLevel;
-global using AluraRPA.Domain.Enums;
 global using System.Reflection;
 global using AluraRPA.Infrastructure.Extensions;

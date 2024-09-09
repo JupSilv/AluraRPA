@@ -22,7 +22,7 @@ public class Navigator : INavigator
         _aluraController = aluraController;
     }
 
-    public async Task<ResultProcess> NavigationAlura(string url, string searchWord)
+    public async Task<ResultProcess> NavigationAlura(string url, string searchWord, Credential credential)
     {
         _logger.LogInformation("Acessando URL");
         if (_aluraController.Home(url) is null)
@@ -34,13 +34,11 @@ public class Navigator : INavigator
 
         _logger.LogInformation("Acessa primeiro item da pesquisa");
         if (_aluraController.Details() is null)
-            return new(false, "Erro", "Falha ao exibir detalhes");
-
-        _logger.LogInformation("Executa a extração dos dados");
-        if (_aluraController.Extraction() is null)
         {
-
+            _logger.LogError("Falha ao exibir detalhes");
+            return new(false, "Erro", "Falha ao exibir detalhes");
         }
+
         _logger.LogInformation("Executa a extração dos dados");
 
 
@@ -66,4 +64,5 @@ public class Navigator : INavigator
         }
         return false;
     }
+
 }

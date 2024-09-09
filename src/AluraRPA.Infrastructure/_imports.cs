@@ -10,4 +10,3 @@ global using System.Diagnostics;
 global using AluraRPA.Domain.Entities;
 global using GraphQL.Client.Abstractions;
 global using GraphQL;
-global using AluraRPA.Domain.Enums;

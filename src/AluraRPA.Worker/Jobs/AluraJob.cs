@@ -31,12 +31,21 @@ public class AluraJob : JobBase
         {
             _logger.LogInformation("Inicializando aplicação...");
 
+            var credential = await _aluraRepository.GetCredential();
+            if (credential is null)
+            {
+                _logger.LogWarning($"Não há usuário disponível no banco de dados para login!");
+                return;
+            }
+
             SetupDriver(_configuration["AppSettings:ChromeDownloadsPath"]);
 
             string url = _configuration["Alura:URLs:Principal"];
             string searchWord = _configuration["Alura:Words:SearchWord"];
-            var navigationResult = await _navigator.NavigationAlura(url, searchWord);
 
+            var navigationResult = await _navigator.NavigationAlura(url, searchWord, credential);
+            if (!navigationResult.sucess)
+                _logger.LogInformation(navigationResult.obs.ToString());
             _driverFactory.Quit();
 
             _logger.LogInformation("Encerrando aplicação...");

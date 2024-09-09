@@ -1,2 +1,2 @@
 namespace AluraRPA.Domain.Entities;
-public record Credential(string Url, string User, string Password);
+public record Credential( string User, string Password);
