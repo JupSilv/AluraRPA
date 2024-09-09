@@ -1,4 +1,6 @@
 ﻿using AluraRPA.Application.Selenium.Extensions;
+using AluraRPA.Infrastructure.Data.Repositories;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,11 +18,15 @@ namespace AluraRPA.Application.Selenium.Pages
         private ILogger<Navigator> _logger { get; init; }
         private IAluraRepository _aluraRepository { get; set; }
 
-        public HomePage(IDriverFactoryService driverManager
-                        , IConfiguration configuration)
+        public HomePage(IDriverFactoryService driverManager,
+                        ILogger<Navigator> logger,
+                        IConfiguration configuration,
+                        IAluraRepository aluraRepository)
         {
+            _logger = logger;
             _driverManager = driverManager;
             _configuration = configuration;
+            _aluraRepository = aluraRepository;
         }
 
         public ResultProcess HomePageAlura(string url)
@@ -28,12 +34,28 @@ namespace AluraRPA.Application.Selenium.Pages
 
             try
             {
+                //Inicializa a página
                 _driver.Navigate().GoToUrl(url);
                 _driver.WaitTime();
+                _driver.Manage().Window.Maximize();
 
-                if (_driver.WaitElement(By.XPath("//*[@id='header-barraBusca-form-campoBusca']")) is not null)
+                //Valida se a página carregou
+                if (_driver.WaitElement(By.XPath(_configuration["Alura:HomePage:txtSearch"])) is not null)
+                {
                     return new(true, "Acesso à página", "Página carregada com sucesso");
+                    //_logger.LogInformation("Página carregada com sucesso");
 
+                    ////Redireciona para o login
+                    //if (_driver.WaitElement(By.XPath("/html/body/main/section[1]/header/div/nav/div[3]/a[1]")) is not null)
+                    //{
+                    //    _logger.LogInformation("Acessa o login");
+                    //    _driver.WaitElement(By.XPath("/html/body/main/section[1]/header/div/nav/div[3]/a[1]")).Click();
+                    //    return new(true, "Acesso à página", "Página carregada com sucesso");
+                    //}
+                    //return new(false, "Falha da página", "Falha ao acesso a URL");
+                }
+
+                _logger.LogError("Falha ao acesso a URL");
                 return new(false, "Falha da página", "Falha ao acesso a URL");
 
             }
@@ -47,40 +69,49 @@ namespace AluraRPA.Application.Selenium.Pages
         }
         public ResultProcess Search(string searchWord)
         {
-
-            //Insere texto na caixa de busca
-            if (_driver.WaitElement(By.XPath(_configuration["Alura:HomePage:txtSearch"])) is not null)
+            try
             {
-                _driver.WaitElement(By.XPath(_configuration["Alura:HomePage:txtSearch"])).SendKeys(searchWord + Keys.Enter);
+                var buscaElement = _driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:busca"]))
+                   ?? _driver.WaitElement(By.XPath("//*[@id='header-barraBusca-form-campoBusca']"));
 
-                Thread.Sleep(5000);
+                if (buscaElement is not null)
+                {
+                    //Insere texto na caixa de busca
+                    buscaElement.SendKeys(searchWord + Keys.Enter);
+                    Thread.Sleep(3000);
 
-                if (_driver.WaitElement(By.XPath(_configuration["Alura:HomePage:filter"])) is not null)
-                    return new(true, "Busca", "Busca efetuada");
+                    if (_driver.WaitElement(By.XPath("//*[@id='busca-resultados']")) is not null)
+                    {
+                        _logger.LogInformation("Busca efetuada");
+                        return new(true, "Busca", "Busca efetuada");
+                    }
 
-                return new(false, "Falha na busca", "Falha ao executar a busca na caixa de pesquisa");
+                    _logger.LogError("Falha ao executar a busca na caixa de pesquisa");
+                    return new(false, "Falha na busca", "Falha ao executar a busca na caixa de pesquisa");
+
+                }
+
+                _logger.LogError("Falha na busca");
+                return new(false, "Falha da página", "Falha na busca");
+            }
+            catch (Exception ex)
+            {
+
+                return new(false, "Erro", ex.StackTrace);
 
             }
-
-            return new(false, "Falha da página", "Falha ao acesso a URL");
         }
 
         public ResultProcess Details()
         {
             try
             {
-                //Filtra por cursos
-                if (_driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:filtroBusca"])) is not null)
-                    _driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:filtroBuscaCursos"])).Click();
-
-                Thread.Sleep(3000);
-
                 //Valida se retornou a busca
-                if (_driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:pagina"])) is not null)
+                if (_driver.WaitElement(By.XPath("//*[@id='busca-resultados']/ul")) is not null)
                 {
 
                     //Lista os resultados da busca
-                    IList<IWebElement> elementList = _driver.FindElements(By.XPath(_configuration["Alura:SearchPage:resultadoBusca"])).ToList();
+                    IList<IWebElement> elementList = _driver.FindElements(By.XPath("//*[@id='busca-resultados']/ul")).ToList();
 
                     //Total de itens retornado na busca
                     var total = elementList.Count;
@@ -90,36 +121,32 @@ namespace AluraRPA.Application.Selenium.Pages
 
                     for (int i = 0; i < total; i++)
                     {
-                        _driver.WaitElement(By.XPath($"//*[@id='busca-resultados']/ul[1]/li[{i + 1}]/div/a/div[1]/div[1]/h4")).Click();
+                        _driver.WaitElement(By.XPath($"//*[@id='busca-resultados']/ul/li[{i + 1}]/a")).Click();
+                        //_driver.WaitElement(By.XPath($"//*[@id='busca-resultados']/ul[1]/li[{i + 1}]/div/a/div[1]/div[1]/h4")).Click();
+                        Thread.Sleep(3000);
 
-                        //Valida se carregou a página
-                        if (_driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:enroll"])) is not null)
+                        try
                         {
-
-                            try
+                            dataExtracted.Add(new DataExtracted
                             {
-                                dataExtracted.Add(new DataExtracted
-                                {
 
-                                    titulo = _driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:titulo"])).Text,
-                                    professor = _driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:professor"])).Text,
-                                    cargaHoraria = _driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:cargaHoraria"])).Text,
-                                    descricao = _driver.WaitElement(By.XPath(_configuration["Alura:SearchPage:descricao"])).Text,
-                                });
+                                titulo = _driver.WaitElement(By.XPath("/html/body/section[1]/div/div[1]/p[2]")).Text,
+                                professor = _driver.WaitElement(By.XPath("//*[@id='section-icon']/div[1]/section/div/div/div/h3")).Text,
+                                cargaHoraria = _driver.WaitElement(By.XPath("/html/body/section[1]/div/div[2]/div[1]/div/div[1]/div/p[1]")).Text,
+                                descricao = _driver.WaitElement(By.XPath("//*[@id='section-icon']/div[1]/div/div/p")).Text,
+                            });
 
-                                var record = _aluraRepository.InsertData(data: dataExtracted);
-
-                            }
-                            catch (Exception ex)
-                            {
-                                _logger.LogError($"Falha ao acessar detalhes {ex.Message}");
-
-                            }
-
-                            //retorna para resultado da busca
-                            _driver.Navigate().Back();
+                            var record = _aluraRepository.InsertData(dataExtracted.ToList());
 
                         }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError($"Falha ao acessar detalhes {ex.Message}");
+
+                        }
+
+                        //retorna para resultado da busca
+                        _driver.Navigate().Back();
 
                     }
 

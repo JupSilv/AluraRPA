@@ -1,21 +1,19 @@
 ﻿using AluraRPA.Application.Selenium.Pages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace AluraRPA.Application.Selenium.Controllers
 {
     public class AluraController
     {
 
         private HomePage _homePage { get; set; }
+        private LoginPage _loginPage { get; set; }
         private DetailsPage _detailsPage { get; set; }
         public AluraController(HomePage homePage
+            , LoginPage loginPage
             , DetailsPage detailsPage)
         {
             _homePage = homePage;
+
+            _loginPage = loginPage;
             _detailsPage = detailsPage;
         }
 
@@ -50,5 +48,14 @@ namespace AluraRPA.Application.Selenium.Controllers
             return result.obs.ToString();
         }
 
+        public string LoginPage(Credential credential)
+        {
+            var result = _loginPage.LoginPageAlura(credential);
+            if (!result.sucess)
+            {
+                return null;
+            }
+            return result.obs.ToString();
+        }
     }
 }

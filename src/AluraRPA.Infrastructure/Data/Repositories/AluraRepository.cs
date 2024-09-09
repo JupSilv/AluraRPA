@@ -16,7 +16,7 @@ public class AluraRepository : Repository, IAluraRepository
             using (var conn = new SqlConnection(ConnectionString))
             {
                 var sql = $@"insert into 
-                                	[DESAFIO].[TB_DADOS]
+                                	[ALURA].[dbo].[TB_DADOS]
                                 	(
                                 		[vcTitulo]
                                 		,[vcProfessor]
@@ -74,7 +74,7 @@ public class AluraRepository : Repository, IAluraRepository
                             	vcUsuario
                             	,vcSenha
                             from 
-                            	[DESAFIO].[TB_ACESSO]
+                            	[ALURA].[dbo].[TB_ACESSO]
                             where
                             	biAtivo = 1";
 

@@ -12,7 +12,8 @@ public static class AppDependencyInjection
         services.AddSingleton<IProcessManagerService, ProcessManagerService>();
 
         services.AddSingleton<AluraController>();
-        services.AddSingleton<DetailsPage>();
+        services.AddSingleton<DetailsPage>(); 
+        services.AddSingleton<LoginPage>();
         services.AddSingleton<HomePage>();
 
         services.AddSingleton<INavigator, Navigator>();

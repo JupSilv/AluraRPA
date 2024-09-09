@@ -28,6 +28,13 @@ public class Navigator : INavigator
         if (_aluraController.Home(url) is null)
             return new(false, "Erro", "Falha ao acessar URL");
 
+        _logger.LogInformation("Realiza o Logon");
+        //if (_aluraController.LoginPage(credential) is null)
+        //{
+        //    _logger.LogError("Falha ao realizar o login");
+        //    return new(false, "Erro", "Falha ao realizar o login");
+        //}
+
         _logger.LogInformation("Efetua pesquisa");
         if (_aluraController.Search(searchWord) is null)
             return new(false, "Erro", "Falha ao efetuar pesquisa");
